@@ -1,0 +1,9 @@
+<ion-view view-title="Contas">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="conta in contas" type="item-text-wrap" href="#/tab/contas/{{conta.id}}">
+        <h2>{{conta.pessoa.nome}}</h2>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

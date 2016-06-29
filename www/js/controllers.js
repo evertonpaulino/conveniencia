@@ -25,4 +25,16 @@ angular.module('starter.controllers', [])
   $scope.settings = {
     enableFriends: true
   };
+})
+
+.controller('PessoaCtrl', function($scope, Pessoas){
+  $scope.pessoas = Pessoas.all();
+})
+
+.controller('ProdutoCtrl', function($scope, Produtos){
+  $scope.produtos = Produtos.all();
+})
+
+.controller('ContaCrtl', function($scope, Contas){
+  //$scope.contas = Contas.all();
 });
