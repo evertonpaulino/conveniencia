@@ -35,6 +35,10 @@ angular.module('starter.controllers', [])
   $scope.produtos = Produtos.all();
 })
 
-.controller('ContaCrtl', function($scope, Contas){
-  //$scope.contas = Contas.all();
+.controller('ContaCtrl', function($scope, Contas){
+  $scope.contas = Contas.all();
+  
+  $scope.newConta = function () {
+    console.log('Nova Conta');
+  }
 });

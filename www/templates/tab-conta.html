@@ -1,4 +1,10 @@
 <ion-view view-title="Contas">
+  <ion-nav-buttons side="primary">
+    <button class="button" ng-click="newConta()">
+      Nova
+    </button>
+  </ion-nav-buttons>
+
   <ion-content>
     <ion-list>
       <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="conta in contas" type="item-text-wrap" href="#/tab/contas/{{conta.id}}">
